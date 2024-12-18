@@ -4,7 +4,7 @@ import 'package:trendhive/screens/auth/login/login.dart';
 
 void main() {
   runApp(
-    GetMaterialApp(
+    GetMaterialApp(color: Color(0xffFFFF),
       home: Login(),
     ),
   );
