@@ -1,6 +1,6 @@
 class XAssets {
   XAssets._();
 
-  static String bgImg = "";
+  static String bgImg = "assets/abc.jpg";
 
 }
