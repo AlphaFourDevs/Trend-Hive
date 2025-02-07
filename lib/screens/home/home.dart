@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
                 height: XSizes.xHeight(0.25),
                 width: context.width,
                 decoration: BoxDecoration(
@@ -27,7 +27,7 @@ class Home extends StatelessWidget {
                           XAssets.bgImg,
                         ),
                         fit: BoxFit.fill)),
-                child: Align(
+                child: const Align(
                   alignment: Alignment.bottomLeft,
                   child: Text(
                     "Street Clothes",
@@ -39,14 +39,14 @@ class Home extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(10, 8, 0, 0),
+                padding: const EdgeInsets.fromLTRB(10, 8, 0, 0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Sale",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -57,42 +57,64 @@ class Home extends StatelessWidget {
                           onPressed: () {
                             /// backend
                           },
-                          child: Text(
+                          child: const Text(
                             "View all",
                             style: TextStyle(color: Colors.black),
                           ),
                         ),
                       ],
                     ),
-                    Text(
+                    const Text(
                       "Super Summer Sale",
                       style: TextStyle(color: Colors.grey),
                     ),
                     XSizes.boxHeight(0.01),
-                   KListView(),
+                    SizedBox(
+                      height: XSizes.xHeight(0.4),
+                      width: context.width,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        shrinkWrap: true,
+                        itemCount: 5,
+                        itemBuilder: (BuildContext context, int index) {
+                          return const XProductCard();
+                        },
+                      ),
+                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "New",
                           style: TextStyle(
                               fontSize: 27, fontWeight: FontWeight.bold),
                         ),
                         TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               "View all",
                               style: TextStyle(color: Colors.black),
                             ),
-                        )
+                        ),
                       ],
                     ),
-                    Text(
+                    const Text(
                       "You've never seen it before!",
                       style: TextStyle(color: Colors.grey),
                     ),
                     XSizes.boxHeight(0.01),
-                   KListView(),
+                    SizedBox(
+                      height: XSizes.xHeight(0.4),
+                      width: context.width,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        shrinkWrap: true,
+                        itemCount: 5,
+                        itemBuilder: (BuildContext context, int index) {
+                          return const XProductCard();
+                        },
+                      ),
+                    ),
                   ],
                 ),
               ),

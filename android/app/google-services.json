@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "557104698505",
+    "project_id": "trendhive-ed9b8",
+    "storage_bucket": "trendhive-ed9b8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557104698505:android:acec890f547c8eca03e258",
+        "android_client_info": {
+          "package_name": "com.alphafour.trendhive.trendhive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDJwAM4YaaprJYQr0IbN0O8yHSlsCrUXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

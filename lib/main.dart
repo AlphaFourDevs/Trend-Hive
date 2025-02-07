@@ -1,11 +1,17 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:trendhive/screens/auth/login/login.dart';
+import 'package:trendhive/firebase/firebase_options/firebase_options.dart';
+import 'package:trendhive/screens/my_orders/my_orders.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(
     GetMaterialApp(
-      home: Login(),
+      home: MyOrders(),
       debugShowCheckedModeBanner: false,
     ),
   );

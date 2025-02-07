@@ -3,6 +3,8 @@ import 'dart:ui';
 class XColors {
   XColors._();
 
+  static const Color bgColor = Color(0xffF3F3F3);
+
   /// Common Colors
   static const Color kWhite = Color(0xffFFFFFF);
   static const Color kBlack = Color(0xff000000);

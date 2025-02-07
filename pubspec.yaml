@@ -37,6 +37,17 @@ dependencies:
   cupertino_icons: ^1.0.6
   get: ^4.6.6
   flutter_rating_bar: ^4.0.1
+  font_awesome_flutter: ^10.8.0
+  readmore: ^3.0.0
+  flutter_svg: ^2.0.17
+  firebase_core: ^3.10.1
+  cloud_firestore: ^5.6.2
+  firebase_storage: ^12.4.1
+  firebase_auth: ^5.4.1
+  google_sign_in: ^6.2.2
+  image_picker: ^1.1.2
+  path:
+
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +74,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/abc.jpg
+     - assets/google.svg
+     - assets/facebook.svg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
