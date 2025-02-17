@@ -27,7 +27,7 @@ class MyOrders extends StatelessWidget {
                   IconButton(onPressed: () {}, icon: const Icon(Icons.search))
                 ],
               ),
-              Text(
+              const Text(
                 "My Orders",
                 style: TextStyle(
                     color: Colors.black,

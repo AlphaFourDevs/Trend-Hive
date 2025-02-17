@@ -92,14 +92,7 @@ class ProductDetail extends StatelessWidget {
                       XSizes.boxHeight(0.005),
                       const XRatingBar(),
                       XSizes.boxHeight(0.015),
-                      const ReadMoreText(
-                        "Short dress in soft cotton jersey with decorative buttons down the front and wide, frill-trimmed square neckline with concealed elasticated. Elasticated seem under the bust and short puff sleaves with a small frill trim.",
-                        trimLength: 200,
-                        moreStyle: TextStyle(color: Colors.grey),
-                        lessStyle: TextStyle(color: Colors.grey),
-                        trimCollapsedText: "Read More",
-                        trimExpandedText: "Read Less",
-                      ),
+                      const XReadMoreText(descriptionText: "Short dress in soft cotton jersey with decorative buttons down the front and wide, frill-trimmed square neckline with concealed elasticated. Elasticated seem under the bust and short puff sleaves with a small frill trim.",)
                     ],
                   ),
                 ),
@@ -298,6 +291,26 @@ class XBuildImageSlider extends StatelessWidget {
           },
         ),
       ),
+    );
+  }
+}
+
+class XReadMoreText extends StatelessWidget {
+  const XReadMoreText({super.key, required this.descriptionText, this.descriptionColor=Colors.grey});
+
+  final String descriptionText;
+  final Color descriptionColor;
+
+  @override
+  Widget build(BuildContext context) {
+    return ReadMoreText(
+      descriptionText,
+      style: TextStyle(color: descriptionColor),
+      trimLength: 200,
+      moreStyle: const TextStyle(color: Colors.grey),
+      lessStyle: const TextStyle(color: Colors.grey),
+      trimCollapsedText: "Read More",
+      trimExpandedText: "Read Less",
     );
   }
 }

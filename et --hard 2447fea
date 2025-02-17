@@ -1,0 +1,18 @@
+[33m59ff210[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: checkout: moving from ahmad to main
+[33md7edf6d[m HEAD@{1}: reset: moving to HEAD
+[33md7edf6d[m HEAD@{2}: rebase (abort): returning to refs/heads/ahmad
+[33md7edf6d[m HEAD@{3}: reset: moving to d7edf6d
+[33m2447fea[m HEAD@{4}: checkout: moving from 2447fea4943c2a481c94218ce8601783eb704790 to backup
+[33m2447fea[m HEAD@{5}: reset: moving to ORIG_HEAD
+[33md7edf6d[m HEAD@{6}: reset: moving to d7edf6d
+[33m2447fea[m HEAD@{7}: commit: Updated All Code
+[33me87c373[m HEAD@{8}: rebase (start): checkout origin/ahmad
+[33md7edf6d[m HEAD@{9}: commit: Updated All Code
+[33m22685de[m HEAD@{10}: commit: added Navigation and Home screens and custom widgets
+[33mc2f1697[m HEAD@{11}: checkout: moving from ahmadkhan to ahmad
+[33m51fe80b[m HEAD@{12}: reset: moving to HEAD
+[33m51fe80b[m HEAD@{13}: checkout: moving from ahmad to ahmadkhan
+[33mc2f1697[m HEAD@{14}: checkout: moving from main to ahmad
+[33m59ff210[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{15}: checkout: moving from ahmad to main
+[33mc2f1697[m HEAD@{16}: checkout: moving from main to ahmad
+[33m59ff210[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{17}: clone: from https://github.com/AlphaFourDevs/Trend-Hive.git
